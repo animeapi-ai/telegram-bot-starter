@@ -43,7 +43,6 @@ export async function handleMessage(message, telegram) {
       prompt: command.prompt,
       model: config.model,
       orientation: command.orientation,
-      allowNSFW: config.allowNSFW,
     });
     const image = await downloadImage(result.image_url);
     await telegram.sendPhoto(chatId, image.buffer, `anime.${image.extension}`, command.prompt, replyTo);

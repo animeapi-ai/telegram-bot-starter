@@ -31,7 +31,7 @@ npm start
 ## 機能
 
 - `/anime <プロンプト>`。先頭に `portrait`・`square`・`landscape` を付けると向きを指定できます：`/anime landscape 秋の神社`
-- **既定で安全**：NSFW 出力はオフ（`ALLOW_NSFW=false`）。該当画像は拒否・返金され、投稿されません。
+- AnimeAPI は成人向けコンテンツを生成しません。露骨なプロンプトは拒否され、課金されません。
 - **ユーザーごとのクールダウン**：30 秒（`COOLDOWN_SECONDS`、`0` で無効）。
 - **残高なし**：ボットがその旨を伝え、チャージ用リンクを案内します。
 - 拒否されたプロンプトは理由を表示。混雑・失敗時は 1 回再試行し、それでも失敗した場合は返金されます。
@@ -46,7 +46,6 @@ npm start
 | --- | --- | --- |
 | `ANIMEAPI_MODEL` | `anime` | 1 枚 `anime` $0.003、`ultra` $0.01、`ultra-max` $0.02 |
 | `ANIMEAPI_ORIENTATION` | `portrait` | ユーザーが指定しなかった場合に使用 |
-| `ALLOW_NSFW` | `false` | 自分が管理するチャットでのみ `true` に |
 | `COOLDOWN_SECONDS` | `30` | ユーザーごと |
 
 ## リンク

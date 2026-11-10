@@ -1,6 +1,6 @@
 {
   "name": "animeapi-telegram-bot-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Telegram bot starter with an /anime command, powered by AnimeAPI: $0.003 per image, no subscription. No dependencies.",
   "type": "module",

@@ -31,7 +31,7 @@ npm start
 ## 功能
 
 - `/anime <提示词>`；在最前面加 `portrait`、`square` 或 `landscape` 可指定画幅：`/anime landscape 秋天的神社`
-- **默认安全**：NSFW 输出默认关闭（`ALLOW_NSFW=false`）。被标记的图片会被拒绝并退款，不会发出。
+- AnimeAPI 不生成成人内容。露骨的提示词会被拒绝，且不收费。
 - **每用户冷却**：每位用户两张图之间间隔 30 秒（`COOLDOWN_SECONDS`，`0` 为关闭）。
 - **余额不足**：机器人会明确提示，并给出充值链接。
 - 提示词被拒绝时显示原因；繁忙或失败会自动重试一次，仍失败则退款。
@@ -46,7 +46,6 @@ npm start
 | --- | --- | --- |
 | `ANIMEAPI_MODEL` | `anime` | 每张 `anime` $0.003、`ultra` $0.01、`ultra-max` $0.02 |
 | `ANIMEAPI_ORIENTATION` | `portrait` | 用户未指定时使用 |
-| `ALLOW_NSFW` | `false` | 仅在你管理的聊天中设为 `true` |
 | `COOLDOWN_SECONDS` | `30` | 每位用户 |
 
 ## 链接
